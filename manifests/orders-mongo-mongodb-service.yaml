@@ -1,0 +1,53 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"name":"frontend","namespace":"default"},"spec":{"ports":[{"port":80,"protocol":"TCP","targetPort":8080}],"selector":{"app":"frontend"},"type":"ClusterIP"}}
+  creationTimestamp: "2020-02-26T13:13:51Z"
+  name: frontend
+  namespace: default
+  resourceVersion: "137329"
+  selfLink: /api/v1/namespaces/default/services/frontend
+  uid: a217c868-54ac-463a-9df0-6bf0f5c128aa
+spec:
+  clusterIP: 10.0.25.76
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: frontend
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
+PS C:\Users\t-dmtyry> kubectl get service orders-mongo-mongodb -o yaml
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-02-25T10:59:28Z"
+  labels:
+    app: mongodb
+    chart: mongodb-7.8.5
+    heritage: Helm
+    release: orders-mongo
+  name: orders-mongo-mongodb
+  namespace: default
+  resourceVersion: "4874"
+  selfLink: /api/v1/namespaces/default/services/orders-mongo-mongodb
+  uid: d53e1471-61f4-4bb6-b5d5-7a654ea98f58
+spec:
+  clusterIP: 10.0.198.34
+  ports:
+  - name: mongodb
+    port: 27017
+    protocol: TCP
+    targetPort: mongodb
+  selector:
+    app: mongodb
+    release: orders-mongo
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
