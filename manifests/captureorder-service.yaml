@@ -6,7 +6,6 @@ metadata:
       {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"name":"captureorder","namespac                                    e":"default"},"spec":{"ports":[{"port":80,"protocol":"TCP","targetPort":8080}],"selector":{"app":"capt                                    ureorder"},"type":"LoadBalancer"}}
   creationTimestamp: "2020-02-25T11:48:04Z"
   name: captureorder
-  namespace: default
   resourceVersion: "9061"
   selfLink: /api/v1/namespaces/default/services/captureorder
   uid: afd3ce97-4bdf-4e09-a116-e59b86ae3425
