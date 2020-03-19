@@ -10,7 +10,6 @@ metadata:
   creationTimestamp: "2020-02-26T15:05:37Z"
   generation: 1
   name: captureorder
-  namespace: default
   resourceVersion: "5042787"
   selfLink: /apis/extensions/v1beta1/namespaces/default/ingresses/captureorder
   uid: 6a466597-821f-491b-95b9-17abfaa29c96
