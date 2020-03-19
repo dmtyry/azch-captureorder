@@ -8,7 +8,6 @@ metadata:
   creationTimestamp: "2020-02-25T11:44:43Z"
   generation: 6
   name: captureorder
-  namespace: default
   resourceVersion: "5044548"
   selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/captureorder
   uid: 54778b30-5135-47ad-8970-ee2bf11b2b56
