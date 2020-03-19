@@ -11,7 +11,6 @@ metadata:
     heritage: Helm
     release: orders-mongo
   name: orders-mongo-mongodb
-  namespace: default
   resourceVersion: "5043938"
   selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/orders-mongo-mongodb
   uid: 1f343c88-4945-484b-8c6a-471016b4551c
