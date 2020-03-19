@@ -14,7 +14,7 @@ spec:
       spec:
         containers:
         - name: captureorder
-          image: azch/captureorder
+          image: aksworkshopacr01.azurecr.io/captureorder:latest
           imagePullPolicy: Always
           readinessProbe:
             httpGet:
