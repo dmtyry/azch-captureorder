@@ -12,7 +12,6 @@ metadata:
       {"apiVersion":"autoscaling/v1","kind":"HorizontalPodAutoscaler","metadata":{"annotations":{},"name":"captureorder","namespace":"default"},"spec":{"maxReplicas":10,"minReplicas":1,"scaleTargetRef":{"apiVersion":"apps/v1","kind":"Deployment","name":"captureorder"},"targetCPUUtilizationPercentage":50}}
   creationTimestamp: "2020-02-26T15:42:44Z"
   name: captureorder
-  namespace: default
   resourceVersion: "5051690"
   selfLink: /apis/autoscaling/v1/namespaces/default/horizontalpodautoscalers/captureorder
   uid: c6fcee96-6a3b-479f-98f1-ada2060edb56
