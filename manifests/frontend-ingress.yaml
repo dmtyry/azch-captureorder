@@ -9,7 +9,6 @@ metadata:
   creationTimestamp: "2020-02-26T13:22:25Z"
   generation: 3
   name: frontend
-  namespace: default
   resourceVersion: "5042786"
   selfLink: /apis/extensions/v1beta1/namespaces/default/ingresses/frontend
   uid: d855c9b0-6862-42b8-9f2a-891c9016cea6
